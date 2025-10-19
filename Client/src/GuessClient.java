@@ -6,11 +6,7 @@ public class GuessClient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Adresse IP du serveur : ");
-        String serverIp = scanner.nextLine().trim();
-
-        int port = 8888;
-        try (Socket socket = new Socket(serverIp, port);
+        try (Socket socket = new Socket("3.95.228.78", 8888);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
              PrintWriter out = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"), true)) {
 
