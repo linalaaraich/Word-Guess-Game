@@ -33,14 +33,14 @@ Word-guess-game/
     ├── src/GuessClient.java
     └── Client.jar
 
-
+```
 ## Serveur (AWS EC2)
 
 - **IP** : `3.95.228.78`
 - **Port** : `8888`
 - **Java** : OpenJDK 21
 
-```
+
 
 ### Commandes
 
